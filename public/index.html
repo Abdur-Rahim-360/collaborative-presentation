@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Collab Preso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nickModal" class="modal">
+    <div class="modal-content">
+      <h2>Enter your nickname & presentation ID</h2>
+      <input id="nickname" placeholder="Your nickname" />
+      <input id="presId" placeholder="Presentation ID" />
+      <button id="joinBtn">Join</button>
+    </div>
+  </div>
+
+  <div id="mainApp" class="hidden">
+    <header>
+      <button id="addSlide">Add Slide</button>
+      <button id="presentMode">Present</button>
+    </header>
+    <aside id="slidesPanel"></aside>
+    <section id="slideArea"></section>
+    <aside id="usersPanel"></aside>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
